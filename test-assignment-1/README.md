@@ -1,8 +1,9 @@
 # List of tech-stack used to develop 
 
-1. Next JS 
-2. Typescript
-3. Tailwind CSS
+1. Next JS - I have used Next JS to build the application as it allows for server-side rendering.
+2. Typescript - Have used typescript over javascript to have type safety, if the application requires integration with API's.
+3. Tailwind CSS - Allows for rapid developement and can be extensively used to develop responsive applications.
+
 
 
 
