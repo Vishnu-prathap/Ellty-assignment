@@ -1,3 +1,13 @@
+# List of tech-stack used to develop 
+
+1. Next JS 
+2. Typescript
+3. Tailwind CSS
+
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
