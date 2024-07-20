@@ -5,7 +5,7 @@ export default function Home() {
     <div className=' flex flex-col items-center justify-center pt-5'>
       <div className='border-solid rounded-md border-t-1 shadow-lg py-[10px] gap-y-4 flex flex-col min-w-[370px] justify-center'>
         <div className='flex flex-row justify-between items-center py-[8px] pr-[15px] pl-[22px] '>
-          <p>All pages</p>
+          <p className="font-normal text-sm">All pages</p>
           <input type='checkbox' className=' text-blue-600 rounded-md w-[23px] h-[23px]' />
         </div>
         <div className="flex flex-row justify-between items-center py-[8px] pr-[15px] pl-[22px]">
@@ -17,7 +17,7 @@ export default function Home() {
             <div
               className='flex flex-row  max-h-[164px] items-center justify-between py-[8px] pr-[15px] pl-[22px]'
               key={index}>
-              <p>Page {item}</p>
+              <p className="font-normal text-sm">Page {item}</p>
               <input type='checkbox' className=' text-blue-600 rounded-md w-[23px] h-[23px]' />
             </div>
           );
