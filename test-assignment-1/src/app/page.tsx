@@ -5,6 +5,8 @@ export default function Home() {
   const [allChecked, setAllChecked] = useState(false);
   const [checkedItems, setCheckedItems] = useState([false, false, false, false]);
 
+  const hasCheckedItem = checkedItems.some(item => item === true);
+
   const handleAllChange = (e: { target: { checked: any; }; }) => {
     const checked = e.target.checked;
     setAllChecked(checked);
@@ -22,6 +24,16 @@ export default function Home() {
       setAllChecked(true);
     }
   };
+const handleDoneSubmit = () =>{
+setAllChecked(false)
+setCheckedItems(checkedItems.map(() => false));
+if(hasCheckedItem){
+  alert("The selected pages are submitted");  
+}
+else{
+  alert("Please select 1 or more pages to submit")
+}
+}
 
   return (
     <div className='flex flex-col items-center justify-center pt-5'>
@@ -59,7 +71,7 @@ export default function Home() {
         </div>
 
         <div className="py-[10px] px-[20px]">
-          <button className='bg-amber-400 w-[340px] min-h-[40px] rounded-[4px] hover:bg-amber-300'>
+          <button className='bg-amber-400 w-[340px] min-h-[40px] rounded-[4px] hover:bg-amber-300' onClick={handleDoneSubmit}>
             Done
           </button>
         </div>
